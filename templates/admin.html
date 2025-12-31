@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Feedback Records</h1>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Department</th>
+                <th>Subject</th>
+                <th>Faculty</th>
+                <th>Rating</th>
+                <th>Message</th>
+            </tr>
+
+            {% for fb in feedbacks %}
+            <tr>
+                <td>{{ fb.id }}</td>
+                <td>{{ fb.department }}</td>
+                <td>{{ fb.subject }}</td>
+                <td>{{ fb.faculty }}</td>
+                <td>{{ fb.rating }}</td>
+                <td>{{ fb.message }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</body>
+</html>

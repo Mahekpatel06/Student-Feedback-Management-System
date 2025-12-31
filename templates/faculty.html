@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Faculty Feedback View</h1>
+
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+            <th>Rating</th>
+            <th>Message</th>
+        </tr>
+
+        {% for f in feedbacks %}
+        <tr>
+            <td>{{ f.subject }}</td>
+            <td>{{ f.rating }}</td>
+            <td>{{ f.message }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>

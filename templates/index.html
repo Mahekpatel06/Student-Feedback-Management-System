@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Feedback Form</h1>
+
+        <form action="/submit" method="POST">
+
+            <label>Department</label>
+            <input type="text" name="department" required>
+
+            <label>Subject</label>
+            <input type="text" name="subject" required>
+
+            <label>Faculty</label>
+            <input type="text" name="faculty" required>
+
+            <label>Rating (1–5)</label>
+            <select name="rating" required>
+                <option value="">Select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <label>Feedback</label>
+            <textarea name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
