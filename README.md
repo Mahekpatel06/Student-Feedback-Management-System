@@ -18,13 +18,11 @@ The system helps institutions analyze student feedback and improve teaching qual
 
 ## 🛠️ Technologies Used
 ### Backend
-- Python
-- Flask 
+- Python Flask Model 
 
 ### Frontend
 - HTML
 - CSS
-- JavaScript
 
 ### Database
 - SQLite
