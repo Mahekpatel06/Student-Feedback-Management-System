@@ -28,9 +28,8 @@ The system helps institutions analyze student feedback and improve teaching qual
 - SQLite
 
 ### Tools
-- VS Code / PyCharm
+- VS Code 
 - Git & GitHub
-- Virtual Environment (venv)
 
 ---
 
