@@ -19,16 +19,15 @@ The system helps institutions analyze student feedback and improve teaching qual
 ## 🛠️ Technologies Used
 ### Backend
 - Python
-- Flask / Django (any one)
+- Flask 
 
 ### Frontend
 - HTML
 - CSS
-- Bootstrap
-- Jinja2 (for Flask) / Django Templates
+- JavaScript
 
 ### Database
-- SQLite / MySQL / PostgreSQL
+- SQLite
 
 ### Tools
 - VS Code / PyCharm
@@ -50,7 +49,3 @@ The system helps institutions analyze student feedback and improve teaching qual
    - View student feedback
    - Analyze responses
 
----
-
-## 🗂️ Project Structure (Flask Example)
-# Student-Feedback-Management-System
